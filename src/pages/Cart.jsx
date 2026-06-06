@@ -7,13 +7,13 @@ export default function Cart() {
   if (cart.items.length === 0) {
     return (
       <main className="pt-32 pb-24 px-6 max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-black text-dark tracking-tight mb-6">Your Cart</h1>
-        <p className="text-smoke mb-10">Your cart is empty.</p>
+        <h1 className="text-4xl md:text-5xl font-black text-dark tracking-tight mb-6">Tu Carrito</h1>
+        <p className="text-smoke mb-10">Tu carrito está vacío.</p>
         <Link
           to="/shop"
           className="inline-flex items-center justify-center px-10 py-4 bg-dark text-off-white text-sm font-bold uppercase tracking-widest hover:bg-dark/80 transition-colors"
         >
-          Continue Shopping
+          Seguir Comprando
         </Link>
       </main>
     );
@@ -21,7 +21,7 @@ export default function Cart() {
 
   return (
     <main className="pt-32 pb-24 px-6 max-w-4xl mx-auto">
-      <h1 className="text-4xl md:text-5xl font-black text-dark tracking-tight mb-16">Your Cart</h1>
+      <h1 className="text-4xl md:text-5xl font-black text-dark tracking-tight mb-16">Tu Carrito</h1>
 
       <div className="flex flex-col gap-6">
         {cart.items.map((item) => (
@@ -56,7 +56,7 @@ export default function Cart() {
                   onClick={() => removeFromCart(item.id)}
                   className="text-xs uppercase tracking-widest text-smoke hover:text-dark transition-colors font-medium"
                 >
-                  Remove
+                  Eliminar
                 </button>
               </div>
             </div>
@@ -73,9 +73,9 @@ export default function Cart() {
           <span className="text-2xl font-black text-dark">${cartTotal.toFixed(2)}</span>
         </div>
         <button className="px-12 py-4 bg-dark text-off-white text-sm font-bold uppercase tracking-widest hover:bg-dark/80 transition-colors">
-          Checkout
+          Finalizar Pedido
         </button>
-        <p className="text-xs text-smoke/60 mt-2">Simple checkout — no account required</p>
+        <p className="text-xs text-smoke/60 mt-2">Compra simple — sin necesidad de registro</p>
       </div>
     </main>
   );

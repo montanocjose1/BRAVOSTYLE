@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 
 const categories = [
-  { name: "Oversized Tees", image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80", slug: "oversized-tees" },
+  { name: "Camisetas Oversize", image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80", slug: "oversized-tees" },
   { name: "Hoodies", image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&q=80", slug: "hoodies" },
-  { name: "Essentials", image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&q=80", slug: "essentials" },
-  { name: "New Drop", image: "https://images.unsplash.com/photo-1608236415054-3d73e200bce4?w=800&q=80", slug: "new-drop" },
+  { name: "Esenciales", image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&q=80", slug: "essentials" },
+  { name: "Nueva Colección", image: "https://images.unsplash.com/photo-1608236415054-3d73e200bce4?w=800&q=80", slug: "new-drop" },
 ];
 
 export default function Categories() {
   return (
     <section className="py-24 px-6 max-w-7xl mx-auto">
       <div className="mb-16">
-        <p className="text-xs uppercase tracking-[0.3em] text-smoke font-medium mb-3">Categories</p>
-        <h2 className="text-4xl md:text-5xl font-black text-dark tracking-tight">Shop by Category</h2>
+        <p className="text-xs uppercase tracking-[0.3em] text-smoke font-medium mb-3">Categorías</p>
+        <h2 className="text-4xl md:text-5xl font-black text-dark tracking-tight">Compra por Categoría</h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">

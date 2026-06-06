@@ -11,7 +11,7 @@ export default function InstagramGallery() {
   return (
     <section className="py-24">
       <div className="px-6 max-w-7xl mx-auto mb-12 text-center">
-        <p className="text-xs uppercase tracking-[0.3em] text-smoke font-medium mb-3">Follow Us</p>
+        <p className="text-xs uppercase tracking-[0.3em] text-smoke font-medium mb-3">Síguenos</p>
         <h2 className="text-3xl md:text-5xl font-black text-dark tracking-tight">@BRAVOSTYLE</h2>
       </div>
 

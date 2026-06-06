@@ -14,10 +14,10 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex items-center gap-10 text-sm font-medium uppercase tracking-widest">
-          <Link to="/" className="hover:text-smoke transition-colors">Home</Link>
-          <Link to="/shop" className="hover:text-smoke transition-colors">Shop</Link>
+          <Link to="/" className="hover:text-smoke transition-colors">Inicio</Link>
+          <Link to="/shop" className="hover:text-smoke transition-colors">Tienda</Link>
           <Link to="/cart" className="relative hover:text-smoke transition-colors">
-            Cart
+            Carrito
             {cartCount > 0 && (
               <span className="absolute -top-2 -right-5 text-[10px] bg-dark text-off-white w-4 h-4 flex items-center justify-center rounded-full">
                 {cartCount}
@@ -29,7 +29,7 @@ export default function Navbar() {
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden flex flex-col gap-1.5"
-          aria-label="Toggle menu"
+          aria-label="Abrir menú"
         >
           <span className={`block w-6 h-[2px] bg-dark transition-transform ${open ? "rotate-45 translate-y-[4px]" : ""}`} />
           <span className={`block w-6 h-[2px] bg-dark transition-opacity ${open ? "opacity-0" : ""}`} />
@@ -39,10 +39,10 @@ export default function Navbar() {
 
       {open && (
         <div className="md:hidden bg-off-white border-t border-dark/5 px-6 pb-6 pt-2 flex flex-col gap-4 text-sm font-medium uppercase tracking-widest">
-          <Link to="/" onClick={() => setOpen(false)}>Home</Link>
-          <Link to="/shop" onClick={() => setOpen(false)}>Shop</Link>
+          <Link to="/" onClick={() => setOpen(false)}>Inicio</Link>
+          <Link to="/shop" onClick={() => setOpen(false)}>Tienda</Link>
           <Link to="/cart" onClick={() => setOpen(false)}>
-            Cart {cartCount > 0 ? `(${cartCount})` : ""}
+            Carrito {cartCount > 0 ? `(${cartCount})` : ""}
           </Link>
         </div>
       )}

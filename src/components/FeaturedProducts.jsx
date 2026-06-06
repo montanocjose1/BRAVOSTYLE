@@ -9,11 +9,11 @@ export default function FeaturedProducts() {
     <section className="py-24 px-6 max-w-7xl mx-auto">
       <div className="flex items-end justify-between mb-16">
         <div>
-          <p className="text-xs uppercase tracking-[0.3em] text-smoke font-medium mb-3">Collection</p>
-          <h2 className="text-4xl md:text-5xl font-black text-dark tracking-tight">Featured Products</h2>
+          <p className="text-xs uppercase tracking-[0.3em] text-smoke font-medium mb-3">Colección</p>
+          <h2 className="text-4xl md:text-5xl font-black text-dark tracking-tight">Productos Destacados</h2>
         </div>
         <Link to="/shop" className="hidden md:inline-flex text-sm font-bold uppercase tracking-widest border-b-2 border-dark pb-1 hover:text-smoke hover:border-smoke transition-colors">
-          View All
+          Ver Todo
         </Link>
       </div>
 
@@ -33,7 +33,7 @@ export default function FeaturedProducts() {
               onClick={() => addToCart(product)}
               className="mt-4 w-full py-3 bg-dark text-off-white text-xs font-bold uppercase tracking-widest hover:bg-dark/80 transition-colors"
             >
-              Add to Cart
+              Comprar
             </button>
           </div>
         ))}
@@ -41,7 +41,7 @@ export default function FeaturedProducts() {
 
       <div className="mt-10 text-center md:hidden">
         <Link to="/shop" className="inline-flex text-sm font-bold uppercase tracking-widest border-b-2 border-dark pb-1">
-          View All
+          Ver Todo
         </Link>
       </div>
     </section>

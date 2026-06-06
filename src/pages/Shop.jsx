@@ -13,14 +13,14 @@ export default function Shop() {
   return (
     <main className="pt-32 pb-24 px-6 max-w-7xl mx-auto">
       <div className="mb-16">
-        <p className="text-xs uppercase tracking-[0.3em] text-smoke font-medium mb-3">Collection</p>
+        <p className="text-xs uppercase tracking-[0.3em] text-smoke font-medium mb-3">Colección</p>
         <h1 className="text-4xl md:text-6xl font-black text-dark tracking-tight">
-          {category ? category.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()) : "All Products"}
+          {category ? category.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()) : "Todos los Productos"}
         </h1>
       </div>
 
       {filtered.length === 0 ? (
-        <p className="text-smoke">No products found in this category.</p>
+        <p className="text-smoke">No se encontraron productos en esta categoría.</p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {filtered.map((product) => (
@@ -38,7 +38,7 @@ export default function Shop() {
                 onClick={() => addToCart(product)}
                 className="mt-4 w-full py-3 bg-dark text-off-white text-xs font-bold uppercase tracking-widest hover:bg-dark/80 transition-colors"
               >
-                Add to Cart
+                Comprar
               </button>
             </div>
           ))}
